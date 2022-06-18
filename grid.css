@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}   
+body{
+    background-color: gainsboro;
+    display: flex;
+    place-items: center;
+    min-height: 100vh;
+
+}
+
+/*mobile screen */
+@media screen and (max-width: 400px) {
+    main{
+        flex-direction: column;
+    }
+}
+main{
+    display: grid;
+    grid-template-areas: 
+    'a a b'
+    'c d d'
+    'c e e';
+    gap: 10px;
+    width: 50%;
+    margin: auto;
+}
+main div{
+    padding: 3em;
+    text-align: center;
+}
+.team-a{
+    background-color: blueviolet;
+    grid-area: a;
+}
+.team-b{
+    background-color: coral;
+    grid-area: b;
+}
+.team-c{
+    background-color: aquamarine;
+    grid-area: c;
+}
+.team-d{
+    background-color: cornflowerblue;
+    grid-area: d;
+}
+.team-e{
+    background-color: darkgoldenrod;
+    grid-area: e;
+}
